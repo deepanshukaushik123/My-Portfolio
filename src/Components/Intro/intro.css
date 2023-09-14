@@ -78,12 +78,20 @@
 
    .bg {
     left: 1rem;
-    height: calc(100vh + 7rem);
-    width: 100vw;
+    height: 40rem;
+    width: 30rem;
    }
 
    .introDiv {
     font-size: 3rem;
+}
+
+.Social-div {
+    display: none;
+}
+
+.socialIcn {
+    display: none;
 }
     
 }
