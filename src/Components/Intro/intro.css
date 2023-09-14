@@ -78,7 +78,12 @@
 
    .bg {
     left: 1rem;
-    height: 44rem;
+    height: calc(100vh + 7rem);
+    width: 100vw;
    }
+
+   .introDiv {
+    font-size: 3rem;
+}
     
 }
