@@ -1,5 +1,5 @@
 .Navbar {
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(70, 67, 67);
     height: 5rem;
     width: 100vw;
     max-width: 85rem;
@@ -29,11 +29,12 @@
             padding: 0 1rem;
         }
 
+        .navLink:hover {
+            color:rgb(254,200,106);
+            border-bottom: 3px solid rgb(254,200,106);
+            /* margin: 0.5rem auto; */
+        }
     }
 
-    .navLink:hover {
-        color:rgb(254,200,106);
-        border-bottom: 3px solid rgb(254,200,106);
-        /* margin: 0.5rem auto; */
-    }
+   
 }

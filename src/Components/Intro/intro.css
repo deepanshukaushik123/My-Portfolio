@@ -1,8 +1,11 @@
 .introSec {
     /* position: relative; */
     height: 43rem;
+    max-width: 85rem;
+    margin: 0 auto;
     /* max-width: 75rem;
     margin: 0 auto; */
+    background-color: rgb(70, 67, 67);
 }
 
 .bg {
@@ -10,6 +13,7 @@
     height: 40rem;
     right: 3rem;
     position: absolute;
+    opacity: 0.8;
     /* z-index: -1; */
 }
 
@@ -26,7 +30,7 @@
 
 .introBtn {
     background: none;
-    color: white;
+    color: rgb(254,200,106);
     border: 0.2rem solid rgb(254,200,106);
     padding: 0.5rem;
     border-radius: 0.3rem;

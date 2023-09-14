@@ -8,6 +8,9 @@ import react from '../../assets/React.png'
 import Wordpress from '../../assets/WordPress.png'
 import Ubuntu from '../../assets/ubuntu-logo.png'
 import Sass from '../../assets/sass.svg'
+import ConnectFour from '../../assets/ConnectFour.png'
+import KarmicQuest from '../../assets/KarmicQuest.png'
+import Archts from '../../assets/Archts.png'
 
 
 const About = () => {
@@ -79,6 +82,16 @@ const About = () => {
                 })}
                 </div>
             </div>
+            <section className='ProjectsSec'>
+            <div className="Portfolio">Projects</div>
+            <div className="PortfolioImg">
+                <div><img src={ConnectFour} alt="" className="Img" /><p>Connect Four</p></div>
+               
+                <img src={KarmicQuest} alt="" className="Img" />
+                <img src={Archts} alt="" className="Img" />
+            </div>
+            <button className="ProjectsBtn">View More</button>
+            </section>
         </section>
     )
 }
