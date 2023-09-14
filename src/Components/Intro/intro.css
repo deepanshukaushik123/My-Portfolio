@@ -1,0 +1,72 @@
+.introSec {
+    /* position: relative; */
+    height: 43rem;
+    /* max-width: 75rem;
+    margin: 0 auto; */
+}
+
+.bg {
+    max-width: 85rem;
+    height: 40rem;
+    right: 3rem;
+    position: absolute;
+    /* z-index: -1; */
+}
+
+.introDiv {
+    font-size: 3rem;
+    margin: 5rem 3rem;
+    top: 10rem;
+    position: absolute;
+}
+
+.introh2 {
+    color:rgb(254,200,106);
+}
+
+.introBtn {
+    background: none;
+    color: white;
+    border: 0.2rem solid rgb(254,200,106);
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.p1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+
+
+/* p {
+    font-size: medium;
+    font: 100;
+} */
+
+.Social-div {
+    height: 10rem;
+    top: 19rem;
+    right: 4rem;
+    width: 0.5rem;
+    position: absolute;
+    background-color: rgb(254,200,106);
+    display: flex;
+    flex-direction: column;
+}
+
+.socialIcn {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 30rem;
+    right: 3rem;
+}
+
+.socialImg {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: 0.4rem 0;
+    cursor: pointer;
+}

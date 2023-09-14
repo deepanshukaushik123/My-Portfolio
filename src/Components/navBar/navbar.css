@@ -1,0 +1,37 @@
+.Navbar {
+    background-color: rgb(50, 50, 50);
+    height: 5rem;
+    width: 100vw;
+    max-width: 85rem;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-basis: auto;
+    justify-content: space-between;
+    z-index: 3;
+    position: sticky;
+}
+
+.navImg {
+    object-fit: cover;
+    height: 2rem;
+    width: 10rem;
+    top: 0;
+}
+
+.navLinks {
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+}
+
+.navLink {
+    padding: 0 1rem;
+}
+
+.navLink:hover {
+    color:rgb(254,200,106);
+    border-bottom: 3px solid rgb(254,200,106);
+    /* margin: 0.5rem auto; */
+}
