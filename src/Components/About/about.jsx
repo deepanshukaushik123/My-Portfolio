@@ -16,81 +16,130 @@ import Archts from '../../assets/Archts.png'
 const About = () => {
 
     const skillObj = [
-    
-    {
-        img: Html,
-        title:'HTML'
-    },
-   
-    {
-        img: Css,
-        title:'CSS'
-    },
-    {
-        img: Javascript,
-        title:'JavaScript'
-    },
-    {
-        img: react,
-        title:'React'
-    },
-    {
-        img: Java,
-        title:'Core-Java'
-    },
-    {
-        img: Wordpress,
-        title:'WordPress'
-    },
-    {
-        img: Ubuntu,
-        title:'Ubuntu'
-    },
-    {
-        img: Sass,
-        title:'Sass'
-    },
-    
+
+        {
+            img: Html,
+            title: 'HTML'
+        },
+
+        {
+            img: Css,
+            title: 'CSS'
+        },
+        {
+            img: Javascript,
+            title: 'JavaScript'
+        },
+        {
+            img: react,
+            title: 'React'
+        },
+        {
+            img: Java,
+            title: 'Core-Java'
+        },
+        {
+            img: Wordpress,
+            title: 'WordPress'
+        },
+        {
+            img: Ubuntu,
+            title: 'Ubuntu'
+        },
+        {
+            img: Sass,
+            title: 'Sass'
+        },
+
     ]
+
+    const projectsObj = [
+
+        {
+            img: ConnectFour,
+            title: 'Connect Four',
+            desc: 'A desktop game app designed using JavaFX'
+        },
+
+        {
+            img: KarmicQuest,
+            title: 'KarmicQuest Website',
+            desc: 'Designed using wordpress'
+        },
+        {
+            img: Archts,
+            title: 'Archts Website',
+            desc: 'Designed using wordpress'
+        }
+    ]
+
     return (
         <section>
             <div className='about'>
                 <h1>About</h1>
                 <div className='abt-div'>
-                <span className='arrow'>      </span> 
-                
-                <span className='p2'>Currently wrapping up my BTech degree.
-                    So, what's my thing? Well, it's all about software development.
-                   <span style={{color: 'rgb(254,200,106)'}}> I'm kind of obsessed with it!
-                   </span>
-                     You know, writing code, making things work, and turning ideas into digital reality – that's my jam.
-                    I've been diving deep into this tech world during my studies, and I can't get enough of it. I'm always on the lookout for the latest and greatest in software development.
-                    Exciting times ahead!
-                </span>
+                    <span className='arrow'>      </span>
+
+                    <span className='p2'>Currently wrapping up my BTech degree.
+                        So, what's my thing? Well, it's all about software development.
+                        <span style={{ color: 'rgb(254,200,106)' }}> I'm kind of obsessed with it!
+                        </span>
+                        You know, writing code, making things work, and turning ideas into digital reality – that's my jam.
+                        I've been diving deep into this tech world during my studies, and I can't get enough of it. I'm always on the lookout for the latest and greatest in software development.
+                        Exciting times ahead!
+                    </span>
                 </div>
             </div>
             <div className="mySkills">
                 My Skills
                 <div className='skillCardAlign'>
-                {skillObj.map((item, index) => {
-                    return(
-                        <div className="skillsCard">
-                        <img src={item.img} alt="" className="skillsImg" />
-                        <div className="skillTitle">{item.title}</div>
-                    </div>
-                    )
-                })}
+                    {skillObj.map((item, index) => {
+                        return (
+                            <div className="skillsCard">
+                                <img src={item.img} alt="" className="skillsImg" />
+                                <div className="skillTitle">{item.title}</div>
+                            </div>
+                        )
+                    })}
                 </div>
             </div>
-            <section className='ProjectsSec'>
+            {/* <section className='ProjectsSec'>
             <div className="Portfolio">Projects</div>
             <div className="PortfolioImg">
-                <div><img src={ConnectFour} alt="" className="Img" /><p>Connect Four</p></div>
+                <span><img src={ConnectFour} alt="" className="Img" /><h1>Connect Four</h1></span>
                
                 <img src={KarmicQuest} alt="" className="Img" />
                 <img src={Archts} alt="" className="Img" />
             </div>
             <button className="ProjectsBtn">View More</button>
+            </section> */}
+
+            <section className='ProjectsSec'>
+                <div className="Portfolio">Projects</div>
+                <div className="projects">
+                {projectsObj.map((item, index) => {
+                    return (
+
+                        <div class="container">
+                            <div class="image-container">
+                                <img src={item.img} alt="Image" className='ProImg'/>
+                                <div class="overlay">
+                                    <h5>{item.title}</h5>
+                                    <p>{item.desc}</p>
+                                    <button>View More</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    )
+                })}
+                </div>
+            </section>
+
+
+            <section className='Eduction'>
+                <span className="icon" style={{ background: 'yellow' }}></span>
+                <p>Education</p>
             </section>
         </section>
     )
