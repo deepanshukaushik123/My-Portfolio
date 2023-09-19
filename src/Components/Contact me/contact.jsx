@@ -1,0 +1,55 @@
+import React, {useRef} from 'react'
+import './contact.css';
+import Logo from "../../assets/image2.png";
+import Linkedin from "../../assets/linkedin.svg";
+import Github from "../../assets/github.png";
+import Instagram from "../../assets/instagram.svg";
+import Whatsapp from "../../assets/whatsapp.svg";
+import emailjs from '@emailjs/browser';
+
+
+const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_7l9ki2q', 'template_u7unaul', form.current, 'sphVkiCuTANDZQfbJ')
+        .then((result) => {
+            console.log(result.text);
+            alert(result.text)
+        }, (error) => {
+            console.log(error.text);
+            alert(error.text)
+        });
+};
+  return (
+    <div className='mainContainer'>
+    <section className="aboutSec">
+        <img src={Logo} className='logoImg' />
+        <h2 className='abt-h2'>Deepanshu Kaushik</h2>
+        <p className='abt-Para'>A Passionate Software Developer</p>
+        <span className="Icns">
+            <img src={Linkedin} className='icons' />
+            <img src={Github} className='icons' />
+            <img src={Instagram} className='icons' />
+            <img src={Whatsapp} className='icons' />
+        </span>
+    </section>
+    <section className="contactMe">
+    <div id="contact">
+                <h1 className="contactPageTitle">Contact Me</h1>
+                <span className="contactDesc">Please fill out the form below to discuss any work opportunities</span>
+                <form className='contactForm'  ref={form} onSubmit={sendEmail}>
+                    <input type="text" className="name" placeholder='Your Name' name='your_name' />
+                    <input type="email" className="email" placeholder='Your Email' name='your_email'/>
+                    <textarea name="message" className='msg' cols="30" rows="5" placeholder='Your Message'></textarea>
+                    <button type='submit' value='send' className="submitBtn">Submit</button>
+                </form>
+            </div>
+    </section>
+    </div>
+  )
+}
+
+export default Contact

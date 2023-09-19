@@ -123,16 +123,7 @@ const About = () => {
                     })}
                 </div>
             </div>
-            {/* <section className='ProjectsSec'>
-            <div className="Portfolio">Projects</div>
-            <div className="PortfolioImg">
-                <span><img src={ConnectFour} alt="" className="Img" /><h1>Connect Four</h1></span>
-               
-                <img src={KarmicQuest} alt="" className="Img" />
-                <img src={Archts} alt="" className="Img" />
-            </div>
-            <button className="ProjectsBtn">View More</button>
-            </section> */}
+
 
             <section className='ProjectsSec'>
                 <div className="Portfolio">Projects</div>
@@ -156,21 +147,6 @@ const About = () => {
                 </div>
             </section>
 
-
-            {/* <section className='Eduction'>
-                <p style={{color: 'green' , font: '30px'}}>Education</p>
-                <div className="container">
-                <div className="dateDot">
-                <span className="leftDate"> 2024</span>
-                <span className="dot"> </span>
-                </div>
-                <div className="border"></div>
-                <div className="content">
-                    <h2>Btech (CSE)</h2>
-                    <p>HMR Institute of Technology and Management</p>
-                </div>
-                </div>
-            </section> */}
             <section className='education-section'>
                 <h2 className='education-h2'>Education</h2>
 

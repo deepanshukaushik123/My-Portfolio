@@ -201,6 +201,7 @@ h1 {
 
   .projects {
     display: flex;
+    flex-wrap: wrap;
   }
 
   /* .container {
