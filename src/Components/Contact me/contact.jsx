@@ -1,11 +1,15 @@
 import React, {useRef} from 'react'
 import './contact.css';
-import Logo from "../../assets/image2.png";
+import Logo from "../../assets/Photo.webp";
 import Linkedin from "../../assets/linkedin.svg";
 import Github from "../../assets/github.png";
 import Instagram from "../../assets/instagram.svg";
 import Whatsapp from "../../assets/whatsapp.svg";
 import emailjs from '@emailjs/browser';
+import { CiLocationArrow1 } from 'react-icons/ci';
+import {AiOutlineMail} from 'react-icons/ai'
+import {BsTelephoneInbound} from 'react-icons/bs'
+
 
 
 const Contact = () => {
@@ -29,6 +33,9 @@ const Contact = () => {
         <img src={Logo} className='logoImg' />
         <h2 className='abt-h2'>Deepanshu Kaushik</h2>
         <p className='abt-Para'>A Passionate Software Developer</p>
+        <span className='abt-icn'><CiLocationArrow1/> Delhi, India</span>
+        <span className='abt-icn'><AiOutlineMail/>deepanshukaushik4721@gmail.com</span>
+        <span className='abt-icn'><BsTelephoneInbound/>9650901894</span>
         <span className="Icns">
             <img src={Linkedin} className='icons' />
             <img src={Github} className='icons' />

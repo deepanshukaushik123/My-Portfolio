@@ -9,16 +9,21 @@
 
 .aboutSec {
     border-right: 2px solid black;
+    width: 24rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex: 3;
+    /* flex: 5; */
 
 }
 
+.abt-icn p{
+   font-weight: 100;
+}
+
 .abt-h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 
@@ -41,6 +46,7 @@
 
 #contact {
     display: flex;
+    width: 50rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;

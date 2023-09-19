@@ -87,9 +87,9 @@ const About = () => {
             date: '2018-2021'
         },
         {
-            title: '10th',
+            title: 'Secondary School',
             from: 'Jain Bharati Mrigavati Vidyalaya',
-            date: '2021-2024'
+            date: '2018'
         }
     ]
 

@@ -1,3 +1,9 @@
+.container-nav {
+
+    position: sticky;
+    top: 1px;
+    z-index: 3;
+
 .Navbar {
     background-color: rgb(70, 67, 67);
     height: 5rem;
@@ -9,8 +15,8 @@
     flex-direction: row;
     flex-basis: auto;
     justify-content: space-between;
-    z-index: 3;
-    position: sticky;
+   
+    // position: sticky;
 
     .navImg {
         object-fit: cover;
@@ -37,4 +43,6 @@
     }
 
    
+}
+
 }

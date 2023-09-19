@@ -4,6 +4,7 @@ import Logo from '../../assets/White logo - no background.png'
 
 const Navbar = () => {
     return (
+        <div className="container-nav">
         <nav className="Navbar">
             {/* <div className="navdiv">          </div> */}
             <img src={Logo} alt="LOGO" className="navImg" />
@@ -14,6 +15,7 @@ const Navbar = () => {
                 <li className='navLink'>Contact Me</li>
             </ul>
         </nav>
+        </div>
     )
 }
 
