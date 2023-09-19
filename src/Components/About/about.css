@@ -70,6 +70,10 @@ h1 {
     background-color: rgb(239,191,107);
 }
 
+
+
+
+
 .ProjectsSec {
     background-color: rgb(50, 50, 50);
     display: flex;
@@ -140,7 +144,7 @@ h1 {
     object-fit: fill;
     height: 20rem;
     width: 25rem;
-    margin: 2rem;
+    /* margin: 2rem; */
     transition: transform 0.3s ease; /* Add a smooth transition effect */
   }
   
@@ -177,6 +181,7 @@ h1 {
     background-color: rgb(239,191,107);
     /* max-width: 10rem; */
     border: 3px solid rgb(239,191,107);
+    margin-top: 4rem;
     border-radius: 0.5rem;
     transition: background-color 0.3s ease; /* Add a smooth background color transition */
   }
@@ -196,4 +201,92 @@ h1 {
 
   .projects {
     display: flex;
+  }
+
+  /* .container {
+    display: flex;
+  }
+
+  .dateDot {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .leftDate {
+
+  }
+
+  .dot {
+    background-color: yellow;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+  }
+
+  .border {
+    border-right: 2px;
+    height: 4rem;
+    width: 0.5rem;
+    border-color: yellow;
+    background-color: yellow;
+    position: absolute;
+    left: 2.2rem;
+    top: 1rem;
+  }
+
+  .content {
+
+  } */
+
+
+  .education-section {
+    max-width: 80rem;
+    margin: 0 auto;
+    margin-top: 4rem;
+    background-color: rgb(69,67,67);
+  }
+
+  .education-h2 {
+    font-size: 3rem;
+    margin-left: 1rem;
+    
+    
+  }
+
+  .container-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .designDiv {
+    height: 4rem;
+    width: 4rem;
+    background-color: rgb(254,200,106);
+    border-radius: 50%;
+    margin: 1rem 2.5rem;
+  }
+
+  .line {
+    /* background-color: rgb(254,200,106); */
+    position: relative;
+    border-right: 3px solid rgb(254,200,106);
+    height: 4rem;
+    left: -4.5rem;
+  }
+
+  .content {
+    width: 30rem;
+  }
+
+  .content h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .content p{
+    font-size: larger;
+    font-weight: 100;
+
   }

@@ -73,6 +73,26 @@ const About = () => {
         }
     ]
 
+    const educationObj = [
+
+        {
+            title: 'B.Tech (CSE)',
+            from: 'HMR Institute of Technology and Management',
+            date: '2021-2024'
+        },
+
+        {
+            title: 'Diploma (ECE)',
+            from: 'Chhotu Ram Rural Institute Of Technology',
+            date: '2018-2021'
+        },
+        {
+            title: '10th',
+            from: 'Jain Bharati Mrigavati Vidyalaya',
+            date: '2021-2024'
+        }
+    ]
+
     return (
         <section>
             <div className='about'>
@@ -137,9 +157,40 @@ const About = () => {
             </section>
 
 
-            <section className='Eduction'>
-                <span className="icon" style={{ background: 'yellow' }}></span>
-                <p>Education</p>
+            {/* <section className='Eduction'>
+                <p style={{color: 'green' , font: '30px'}}>Education</p>
+                <div className="container">
+                <div className="dateDot">
+                <span className="leftDate"> 2024</span>
+                <span className="dot"> </span>
+                </div>
+                <div className="border"></div>
+                <div className="content">
+                    <h2>Btech (CSE)</h2>
+                    <p>HMR Institute of Technology and Management</p>
+                </div>
+                </div>
+            </section> */}
+            <section className='education-section'>
+                <h2 className='education-h2'>Education</h2>
+
+                {educationObj.map((item, index) => {
+                    return(
+                        <div className="container-div">
+                        <div className="left-div">
+                        <div className="designDiv"></div>
+                        <div className="line"></div>
+                        </div>
+                        <div className="content">
+                            <h2>{item.title}</h2>
+                            <p>{item.from}</p>
+                            <p>{item.date}</p>
+                        </div>
+                    </div>
+                    )
+                })}
+
+
             </section>
         </section>
     )
