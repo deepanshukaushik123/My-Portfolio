@@ -4,11 +4,12 @@
     top: 1px;
     z-index: 3;
 
-.Navbar {
-    background-color: rgb(70, 67, 67);
+#Navbar {
+    // background-color: rgb(40, 40, 40);
+    background: #666699;
     height: 5rem;
     width: 100vw;
-    max-width: 85rem;
+    // max-width: 85rem;
     margin: 0 auto;
     padding: 1rem;
     display: flex;

@@ -8,12 +8,12 @@ import Whatsapp from "../../assets/whatsapp.svg";
 
 const Intro = () => {
     return (
-        <section className='introSec'>
+        <section id='introSec'>
             <img src={Background} alt='' className="bg" />
             <div className="introDiv">
                 <p className='p1'>I'M</p>
                 <h2 className='introh2'>Deepanshu Kaushik</h2>
-                <p>Fresher</p>
+                <p>Software Developer</p>
                 <button className="introBtn">Download CV</button>
             </div>
             <div className='Social-div'>

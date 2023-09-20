@@ -58,18 +58,18 @@ const About = () => {
         {
             img: ConnectFour,
             title: 'Connect Four',
-            desc: 'A desktop game app designed using JavaFX'
+            desc: 'Create the famous game of Connect4 as a desktop application using JavaFX '
         },
 
         {
             img: KarmicQuest,
             title: 'KarmicQuest Website',
-            desc: 'Designed using wordpress'
+            desc: 'Created a website for an Astrology and vastu consultation company and taken all the key responsibility of Designing the Website using the Wordpress CMS and Deploying the website on the Server'
         },
         {
             img: Archts,
             title: 'Archts Website',
-            desc: 'Designed using wordpress'
+            desc: 'Created a website for an Astrology and vastu consultation company and taken all the key responsibility of Designing the Website using the Wordpress CMS and Deploying the website on the Server'
         }
     ]
 
@@ -95,7 +95,7 @@ const About = () => {
 
     return (
         <section>
-            <div className='about'>
+            <div id='about'>
                 <h1>About</h1>
                 <div className='abt-div'>
                     <span className='arrow'>      </span>
@@ -125,13 +125,13 @@ const About = () => {
             </div>
 
 
-            <section className='ProjectsSec'>
+            <section id='ProjectsSec'>
                 <div className="Portfolio">Projects</div>
                 <div className="projects">
                 {projectsObj.map((item, index) => {
                     return (
-
-                        <div class="container">
+                            <>
+                        {/* <div class="container">
                             <div class="image-container">
                                 <img src={item.img} alt="Image" className='ProImg'/>
                                 <div class="overlay">
@@ -140,8 +140,17 @@ const About = () => {
                                     <button>View More</button>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
 
+                        <div className='projectsContainer'>
+                            <div className="project">
+                            <img src={item.img} className="projectsImg" />
+                            <h5 className='projects-head'>{item.title}</h5>
+                            <p className='projects-para'>{item.desc}</p>
+                            <button className='projects-btn'>View More</button>
+                            </div>
+                             </div>
+                             </>
                     )
                 })}
                 </div>

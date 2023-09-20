@@ -28,14 +28,16 @@ const Contact = () => {
         });
 };
   return (
-    <div className='mainContainer'>
+    <div id='mainContainer'>
     <section className="aboutSec">
         <img src={Logo} className='logoImg' />
         <h2 className='abt-h2'>Deepanshu Kaushik</h2>
         <p className='abt-Para'>A Passionate Software Developer</p>
-        <span className='abt-icn'><CiLocationArrow1/> Delhi, India</span>
-        <span className='abt-icn'><AiOutlineMail/>deepanshukaushik4721@gmail.com</span>
-        <span className='abt-icn'><BsTelephoneInbound/>9650901894</span>
+        <div className="abt-small-div">
+        <div><CiLocationArrow1/> Delhi, India</div>
+        <div><AiOutlineMail/>deepanshukaushik4721@gmail.com</div>
+        <div><BsTelephoneInbound/>9650901894</div>
+        </div>
         <span className="Icns">
             <img src={Linkedin} className='icons' />
             <img src={Github} className='icons' />

@@ -1,31 +1,37 @@
-.mainContainer {
+#mainContainer {
     display: flex;
-    max-width: 80rem;
+    /* max-width: 85rem; */
     margin: 3rem auto;
-    background-color: grey;
+    /* background-color: #61619e; */
+    border-top: 1px solid ;
     overflow: hidden;
     flex-wrap: wrap;
 }
 
 .aboutSec {
     border-right: 2px solid black;
-    width: 24rem;
+    /* width: 24rem; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* flex: 5; */
+    flex: 5;
 
 }
 
-.abt-icn p{
-   font-weight: 100;
+.abt-small-div {
+    margin-top: 2rem;
+    font-weight: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.abt-h2 {
-    font-size: 1.5rem;
-    font-weight: 300;
+.abt-small-div div {
+    padding: 5px;
 }
+
 
 .abt-Para {
     font-weight: 100;
@@ -39,14 +45,14 @@
 }
 
 .icons {
-    height: 3rem;
-    width: 3rem;
-    margin: 0 0.5rem;
+    height: 2rem;
+    width: 2rem;
+    margin: 2.5rem 0.5rem;
 }
 
 #contact {
     display: flex;
-    width: 50rem;
+    /* width: 50rem; */
     flex-direction: column;
     align-items: center;
     justify-content: center;

@@ -5,14 +5,14 @@ import Logo from '../../assets/White logo - no background.png'
 const Navbar = () => {
     return (
         <div className="container-nav">
-        <nav className="Navbar">
+        <nav id="Navbar">
             {/* <div className="navdiv">          </div> */}
             <img src={Logo} alt="LOGO" className="navImg" />
             <ul className='navLinks'>
-                <li className='navLink'>Home</li>
-                <li className='navLink'>About</li>
-                <li className='navLink'>Projects</li>
-                <li className='navLink'>Contact Me</li>
+                <li className='navLink'><a href='#introSec'>Home</a></li>
+                <li className='navLink'><a href='#about'>About</a></li>
+                <li className='navLink'><a href='#ProjectsSec'>Projects</a></li>
+                <li className='navLink'><a href='#mainContainer'>Contact Me</a></li>
             </ul>
         </nav>
         </div>
