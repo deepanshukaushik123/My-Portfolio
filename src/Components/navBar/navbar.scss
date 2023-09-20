@@ -58,7 +58,7 @@
         padding: 0.5rem;
         height: fit-content;
         min-width: 15rem;
-        background: rgb(40, 40, 40);
+        background: rgb(114 120 184);
         border-radius: 1rem;
     }
 
@@ -66,12 +66,15 @@
         color: white;
         padding: 0.5rem 3rem;
         margin: 0.25rem;
-        background: rgb(30, 30, 30);
+        background: rgb(94 94 164);
+        list-style: none;
     }
 
     @media screen and (max-width:720px) {
         .mobMenu {
             display: flex;
+            // margin-left: 100rem;
+
         }
 
         #Navbar {
