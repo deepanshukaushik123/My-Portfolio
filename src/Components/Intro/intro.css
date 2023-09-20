@@ -99,3 +99,18 @@
 }
     
 }
+
+@media screen and (max-width:450px) {
+    .introSec{
+        display: none;
+    }
+
+    .bg {
+        height: 40rem;
+        width: 28rem;
+    }
+
+    .introDiv {
+        font-size: 2rem;
+    }
+}
