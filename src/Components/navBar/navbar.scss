@@ -1,49 +1,81 @@
 .container-nav {
-
     position: sticky;
     top: 1px;
     z-index: 3;
 
-#Navbar {
-    // background-color: rgb(40, 40, 40);
-    background: #666699;
-    height: 5rem;
-    width: 100vw;
-    // max-width: 85rem;
-    margin: 0 auto;
-    padding: 1rem;
-    display: flex;
-    flex-direction: row;
-    flex-basis: auto;
-    justify-content: space-between;
-   
-    // position: sticky;
-
-    .navImg {
-        object-fit: cover;
-        height: 2rem;
-        width: 10rem;
-        top: 0;
-    }
-
-
-    .navLinks {
-        list-style: none;
+    #Navbar {
+        background: #666699;
+        height: 5rem;
+        width: 100vw;
+        margin: 0 auto;
+        padding: 1rem;
         display: flex;
-        cursor: pointer;
+        flex-direction: row;
+        flex-basis: auto;
+        justify-content: space-between;
 
-        .navLink {
-            padding: 0 1rem;
+
+        .navImg {
+            object-fit: cover;
+            height: 2rem;
+            width: 10rem;
+            top: 0;
         }
 
-        .navLink:hover {
-            color:rgb(254,200,106);
-            border-bottom: 3px solid rgb(254,200,106);
-            /* margin: 0.5rem auto; */
+
+        .navLinks {
+            list-style: none;
+            display: flex;
+            cursor: pointer;
+
+            .navLink {
+                padding: 0 1rem;
+            }
+
+            .navLink:hover {
+                color: rgb(254, 200, 106);
+                border-bottom: 3px solid rgb(254, 200, 106);
+            }
         }
+
+
     }
 
-   
-}
+    .mobMenu {
+        display: none;
+        object-fit: cover;
+        height: 1.8rem;
+    }
 
+
+    .navMenu {
+        position: absolute;
+        display: flex;
+        top: 4rem;
+        right: 2rem;
+        z-index: 2;
+        flex-direction: column;
+        padding: 0.5rem;
+        height: fit-content;
+        min-width: 15rem;
+        background: rgb(40, 40, 40);
+        border-radius: 1rem;
+    }
+
+    .listItem {
+        color: white;
+        padding: 0.5rem 3rem;
+        margin: 0.25rem;
+        background: rgb(30, 30, 30);
+    }
+
+    @media screen and (max-width:720px) {
+        .mobMenu {
+            display: flex;
+        }
+
+        #Navbar {
+            display: none;
+        }
+    }
 }
