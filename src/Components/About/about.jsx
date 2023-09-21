@@ -147,7 +147,7 @@ const About = () => {
                             <img src={item.img} className="projectsImg" />
                             <h5 className='projects-head'>{item.title}</h5>
                             <p className='projects-para'>{item.desc}</p>
-                            <button className='projects-btn'>View More</button>
+                            <button className='projects-btn'> <a href={'https://github.com/deepanshukaushik123'}>View More</a></button>
                             </div>
                              </div>
                              </>

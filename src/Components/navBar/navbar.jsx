@@ -12,7 +12,6 @@ const Navbar = () => {
     return (
         <div className="container-nav">
         <nav id="Navbar">
-            {/* <div className="navdiv">          </div> */}
             <img src={Logo} alt="LOGO" className="navImg" />
             <ul className='navLinks'>
                 <li className='navLink'><a href='#introSec'>Home</a></li>
@@ -24,11 +23,10 @@ const Navbar = () => {
 
         <img src={menu} alt="Menu" className='mobMenu' onClick={()=> setShowMenu(!showMenu)} />
       <ul className="navMenu" style={{display: showMenu? 'flex':'none'}}>
-        <li activeClass='active' className="listItem" onClick={()=>setShowMenu(false)}>Home</li>
-        <li activeClass='active' className="listItem" onClick={()=>setShowMenu(false)}>About</li>
-        <li activeClass='active' className="listItem" onClick={()=>setShowMenu(false)}>Portfolio</li>
-        <li activeClass='active' className="listItem" onClick={()=>setShowMenu(false)}>Clients</li>
-        <li activeClass='active' className="listItem" onClick={()=>setShowMenu(false)}>Contact</li>
+        <li className="listItem" onClick={()=>setShowMenu(false)}><a href='#introSec'>Home</a></li>
+        <li className="listItem" onClick={()=>setShowMenu(false)}><a href='#about'>About</a></li>
+        <li className="listItem" onClick={()=>setShowMenu(false)}><a href='#ProjectsSec'>Projects</a></li>
+        <li className="listItem" onClick={()=>setShowMenu(false)}><a href='#mainContainer'>Contact Me</a></li>
       </ul>
 
 
