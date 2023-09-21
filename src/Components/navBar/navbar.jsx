@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import "./navbar.scss";
+import './navbar.scss';
 import Logo from '../../assets/White logo - no background.png'
 import menu from '../../assets/menu.png'
 

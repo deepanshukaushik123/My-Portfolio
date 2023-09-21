@@ -1,5 +1,5 @@
 import React, {useRef} from 'react'
-import './contact.css';
+import './contact.css'
 import Logo from "../../assets/Photo.webp";
 import Linkedin from "../../assets/linkedin.svg";
 import Github from "../../assets/github.png";
