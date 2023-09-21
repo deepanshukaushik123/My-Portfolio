@@ -30,8 +30,16 @@
 
 .abt-small-div div {
     padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
+.svgsss {
+    height: 2rem;
+    width: 2rem;
+}
 
 .abt-Para {
     font-weight: 100;

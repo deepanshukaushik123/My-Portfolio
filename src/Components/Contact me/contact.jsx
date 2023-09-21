@@ -34,9 +34,9 @@ const Contact = () => {
         <h2 className='abt-h2'>Deepanshu Kaushik</h2>
         <p className='abt-Para'>A Passionate Software Developer</p>
         <div className="abt-small-div">
-        <div><CiLocationArrow1/> Delhi, India</div>
-        <div><AiOutlineMail/>deepanshukaushik4721@gmail.com</div>
-        <div><BsTelephoneInbound/>9650901894</div>
+        <div><CiLocationArrow1 /> Delhi, India</div>
+        <div><AiOutlineMail />deepanshukaushik4721@gmail.com</div>
+        <div><BsTelephoneInbound  />9650901894</div>
         </div>
         <span className="Icns">
             <img src={Linkedin} className='icons' />

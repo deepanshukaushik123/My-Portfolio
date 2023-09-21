@@ -5,6 +5,7 @@ import Linkedin from "../../assets/linkedin.svg";
 import Github from "../../assets/github.png";
 import Instagram from "../../assets/instagram.svg";
 import Whatsapp from "../../assets/whatsapp.svg";
+import Resume from '../../assets/Files/DEEPANSHU_KAUSHIK.pdf'
 
 const Intro = () => {
     return (
@@ -14,17 +15,19 @@ const Intro = () => {
                 <p className='p1'>I'M</p>
                 <h2 className='introh2'>Deepanshu Kaushik</h2>
                 <p>Software Developer</p>
-                <button className="introBtn">Download CV</button>
+                <button className="introBtn">
+                    <a className='aBtn' href={Resume}>Download CV</a>
+                </button>
             </div>
             <div className='Social-div'>
             </div>
             <div className="socialIcn">
-                    <img src={Linkedin} alt="" className="socialImg" />
-                    <img src={Github} alt="" className="socialImg" />
-                    <img src={Instagram} alt="" className="socialImg" />
-                    <img src={Whatsapp} alt="" className="socialImg" />
-                </div>
-           
+                <a href='https://www.linkedin.com/in/deepanshu-kaushik-220b29202/'><img src={Linkedin} alt="" className="socialImg" /> </a>
+               <a href='https://github.com/deepanshukaushik123'><img src={Github} alt="" className="socialImg" /></a> 
+               <a href='https://www.instagram.com/dkaushik_0/'><img src={Instagram} alt="" className="socialImg" /></a> 
+               <a href=''><img src={Whatsapp} alt="" className="socialImg" /></a> 
+            </div>
+
         </section>
     )
 }
