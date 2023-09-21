@@ -1,5 +1,5 @@
 #about{
-    margin: 0 3rem;
+    margin: 0 2rem;
     font-size: medium;
     font-weight: 100;
 }
@@ -245,7 +245,7 @@ h1 {
 
 
   .education-section {
-    max-width: 80rem;
+    /* max-width: 80rem; */
     margin: 0 auto;
     margin-top: 4rem;
     /* background-color: rgb(69,67,67); */
@@ -302,7 +302,7 @@ h1 {
     height: 28rem;
     justify-content: center;
     align-items: center;
-    width: 23rem;
+    width: 21rem;
     border-radius: 9px;
     margin: 1rem;
     background-color: rgb(125 136 181);
