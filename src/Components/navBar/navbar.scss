@@ -42,9 +42,11 @@
     }
 
     .mobMenu {
-        display: none;
+        position: relative;
         object-fit: cover;
         height: 1.8rem;
+        left: 90%;
+        margin-top: 10px;
     }
 
 
