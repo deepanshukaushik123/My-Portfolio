@@ -50,7 +50,6 @@ const About = () => {
             img: Sass,
             title: 'Sass'
         },
-
     ]
 
     const projectsObj = [

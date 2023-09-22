@@ -39,10 +39,15 @@ const Contact = () => {
         <div><BsTelephoneInbound  />9650901894</div>
         </div>
         <span className="Icns">
-            <img src={Linkedin} className='icons' />
+            {/* <img src={Linkedin} className='icons' />
             <img src={Github} className='icons' />
             <img src={Instagram} className='icons' />
-            <img src={Whatsapp} className='icons' />
+            <img src={Whatsapp} className='icons' /> */}
+
+              <a href='https://www.linkedin.com/in/deepanshu-kaushik-220b29202/'><img src={Linkedin} alt="" className="icons" /> </a>
+               <a href='https://github.com/deepanshukaushik123'><img src={Github} alt="" className="icons" /></a> 
+               <a href='https://www.instagram.com/dkaushik_0/'><img src={Instagram} alt="" className="icons" /></a> 
+               <a href=''><img src={Whatsapp} alt="" className="icons" /></a> 
         </span>
     </section>
     <section className="contactMe">
@@ -50,9 +55,9 @@ const Contact = () => {
                 <h1 className="contactPageTitle">Contact Me</h1>
                 <span className="contactDesc">Please fill out the form below to discuss any work opportunities</span>
                 <form className='contactForm'  ref={form} onSubmit={sendEmail}>
-                    <input type="text" className="name" placeholder='Your Name' name='your_name' />
-                    <input type="email" className="email" placeholder='Your Email' name='your_email'/>
-                    <textarea name="message" className='msg' cols="30" rows="5" placeholder='Your Message'></textarea>
+                    <input type="text" required='true' className="name" placeholder='Your Name' name='your_name' />
+                    <input type="email" required='true' className="email" placeholder='Your Email' name='your_email'/>
+                    <textarea name="message" required='true' className='msg' cols="30" rows="5" placeholder='Your Message'></textarea>
                     <button type='submit' value='send' className="submitBtn">Submit</button>
                 </form>
             </div>
