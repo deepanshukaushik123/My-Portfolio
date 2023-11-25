@@ -1,5 +1,6 @@
 import React from 'react'
 import './intro.css'
+// import Background from '../../assets/Image.png'
 import Background from '../../assets/image2.png'
 import Linkedin from "../../assets/linkedin.svg";
 import Github from "../../assets/github.png";

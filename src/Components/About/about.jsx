@@ -68,7 +68,7 @@ const About = () => {
         {
             img: Archts,
             title: 'Archts Website',
-            desc: 'Created a website for an Astrology and vastu consultation company and taken all the key responsibility of Designing the Website using the Wordpress CMS and Deploying the website on the Server'
+            desc: 'Created a website for an Architecture company and taken all the key responsibility of Designing the Website using the Wordpress CMS and Deploying the website on the Server'
         }
     ]
 
@@ -99,7 +99,7 @@ const About = () => {
                 <div className='abt-div'>
                     <span className='arrow'>      </span>
 
-                    <span className='p2'>Currently wrapping up my BTech degree.
+                    <span className='p2'>Currently pursuing my BTech.
                         So, what's my thing? Well, it's all about software development.
                         <span style={{ color: 'rgb(254,200,106)' }}> I'm kind of obsessed with it!
                         </span>
